@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --w: 70px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Body */
+        body {
+            /* background-color: lightpink; */
+        }
+
+        /* Navbar */
+
+        #navbar div img {
+            width: var(--w);
+            height: var(--w);
+        }
+
+        #navbar #div_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border:2px solid black; */
+        }
+
+        #navbar {
+            display: flex;
+            /* border:2px solid black; */
+            background-color: #00000070;
+            position: sticky;
+            top: 0px;
+            flex-wrap: wrap;
+
+
+
+        }
+
+        .lists {
+            margin: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* border:2px solid black; */
+            width: 500px;
+
+        }
+
+        a {
+            display: block;
+            color: cyan;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 1.5rem;
+
+        }
+
+        .same_list {
+            list-style: none;
+        }
+
+        /* Section */
+        .box_123 {
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 5px;
+            width: 230px;
+            height: 300px;
+            text-align: center;
+            background-color: rgba(121, 102, 102, 0.938);
+            ;
+            color: rgb(101, 255, 11);
+            padding: 15px;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+
+        }
+
+        section {
+            margin-top: 220px;
+            /* border:2px solid black; */
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            /* background-color: #080b0e94; */
+            z-index: -10;
+
+
+        }
+
+        /*Back ground img  */
+        body::before {
+            content: "";
+            background: url("backgroundimage.jpeg") no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0px;
+            height: 40%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        form {
+            display: flex;
+            margin-top: 20px;
+
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            /* height:100px; */
+            /* border:3px solid black; */
+        }
+
+        .same {
+            display: inline-block;
+            /* border: 2px solid violet; */
+            margin: 5px;
+
+        }
+
+        .but {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #sub {
+            width: 100px;
+            height: 40px;
+            border-radius: 25px;
+            transition: all;
+            transition-duration: 0.3s;
+            background-color: bisque;
+
+        }
+
+        #sub:hover {
+            box-shadow: 1px 5px black;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #bye {
+            color: white;
+        }
+
+        .save {
+            height: 220px;
+            /* border:2px solid red; */
+        }
+
+        a:hover {
+            border-bottom: 2px solid white;
+            color: lime;
+
+        }
+
+        @media only screen and (max-width:800px) {
+            :root {
+                --new_w: 30px;
+            }
+
+            #navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            section {
+
+                /* display: flex; */
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+            }
+
+            a {
+                font-size: 10px;
+                padding: 5px;
+            }
+
+            .box_123 {
+
+                width: 140px;
+                height: 380px;
+                font-size: 0.5rem;
+
+
+                padding: 15px;
+                font-size: 16px;
+                margin-top: 50px;
+
+
+            }
+
+            section {
+                padding: 2px;
+                margin-top: 300px;
+            }
+
+            form {
+                flex-direction: column;
+
+            }
+
+            .same {}
+
+            input {
+                display: block;
+            }
+
+            #navbar div img {
+                width: var(--new_w);
+                height: var(--new_w);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="navbar_div">
+
+        <nav id="navbar">
+
+            <div id="div_img"><img src="food-logo2.png" alt="Image not found"></div>
+
+            <div class="lists">
+
+                <li class="same_list"><a href="https://www.google.com" target="_black">Google</a></li>
+                <li class="same_list"><a href="https://www.youtube.com.com" target="_black">Youtube</a></li>
+                <li class="same_list"><a href="https://www.facebook.com" target="_black">Facebook</a></li>
+                <li class="same_list"><a href="https://web.whatsapp.com/" target="_black">Whatsapp</a></li>
+
+            </div>
+        </nav>
+
+    </div>
+
+
+    <section>
+        <div class="box_123">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt aliquid reprehenderit porro perferendis
+            ducimus officiis dolorem, modi officia laborum omnis, deleniti inventore voluptates. Sapiente laborum
+            perspiciatis qui eaque. Eius voluptate, nisi cupiditate, quo enim sequi tempora voluptates placeat quidem
+            eos iusto harum at dolor laudantium commodi nam
+        </div>
+        <div class="box_123">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt aliquid reprehenderit
+            porro perferendis ducimus officiis dolorem, modi officia laborum omnis, deleniti inventore voluptates.
+            Sapiente laborum perspiciatis qui eaque. Eius voluptate, nisi cupiditate, quo enim sequi tempora voluptates
+            placeat quidem eos iusto harum at dolor laudantium commodi nam</div>
+        <div class="box_123">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt aliquid reprehenderit
+            porro perferendis ducimus officiis dolorem, modi officia laborum omnis, deleniti inventore voluptates.
+            Sapiente laborum perspiciatis qui eaque. Eius voluptate, nisi cupiditate, quo enim sequi tempora voluptates
+            placeat quidem eos iusto harum at dolor laudantium commodi nam</div>
+
+
+    </section>
+
+    <div id="form">
+        <form action="form">
+            <div class="same">
+                Name:
+                <input type="text" name="" id="" class="fo" placeholder="Name">
+            </div>
+
+            <div class="same"> password:
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+
+            <div class="same">Number:
+                <input type="number" name="" id="" placeholder="Number">
+            </div>
+            <div class="same">Email
+                <input type="email" name="" id="" placeholder="Emil ID">
+            </div>
+            <!-- <div class="same">:
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+
+                </div> -->
+
+
+
+        </form>
+    </div>
+    <br>
+    <div class="but">
+        <input type="button" value="Submit" id="sub">
+    </div>
+    <br>
+
+    <footer>
+        <p id="bye">www.abhishek.com</p>
+    </footer>
+
+</body>
+
+</html>
